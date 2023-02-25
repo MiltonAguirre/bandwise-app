@@ -1,10 +1,10 @@
-export const validateEmail = email => {
-    //bassed on https://blog.mailtrap.io/react-native-email-validation/
-    const expression = /\S+@\S+\.\S+/;
-    if (!email || email.length < 6 || !expression.test(String(email)))
-      return false;
-    else return true;
-  };
+export const validateEmail = (email) => {
+  //bassed on https://blog.mailtrap.io/react-native-email-validation/
+  const expression = /\S+@\S+\.\S+/;
+  if (!email || email.length < 6 || !expression.test(String(email)))
+    return false;
+  else return true;
+};
 //   export const validateString = string => {
 //     if (!string || string.length < 3) return false;
 //     return true;
@@ -24,8 +24,12 @@ export const validateEmail = email => {
 //     if (!string || string.length < 15 || string.length > 30) return false;
 //     else return true;
 //   };
-  export const validatePasswords = (pass, repass) => {
-    if (!pass || pass.length < 8 || pass !== repass) return false;
-    else return true;
-  };
-  
+
+export const validatePassword = (pass) => {
+  if (!pass || pass.length < 8) return false;
+  else return true;
+};
+export const validatePasswords = (pass, repass) => {
+  if (!pass || pass.length < 8 || pass !== repass) return false;
+  else return true;
+};

@@ -35,10 +35,12 @@
   align-items: center;
 }
 .button {
-  background-color: #434343;
+  background-color: #181818;
   color: aquamarine;
   border-radius: 5px;
   margin: 3px;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
 }
 .input{
   padding: 5px;
