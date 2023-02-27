@@ -46,12 +46,12 @@ export default function SignIn({ login, register, loading, error }) {
       </Button>
       <Modal
         closeButton
-        aria-labelledby="modal-title"
+        aria-labelledby="modal-sign-in"
         open={visible}
         onClose={closeHandler}
       >
         <Modal.Header>
-          <Text id="modal-title" size={18}>
+          <Text id="modal-sign-in" size={18}>
             Welcome to
             <Text
               b
@@ -75,6 +75,7 @@ export default function SignIn({ login, register, loading, error }) {
             color="primary"
             size="lg"
             placeholder="Email"
+            aria-labelledby="modal-sign-in"
             contentLeft={<Mail fill="currentColor" />}
           />
           <Input
@@ -86,6 +87,7 @@ export default function SignIn({ login, register, loading, error }) {
             color="primary"
             size="lg"
             placeholder="Password"
+            aria-labelledby="modal-sign-in"
             contentLeft={<Password fill="currentColor" />}
           />
           {error && <Text color="error">{error}</Text>}
@@ -103,6 +105,7 @@ export default function SignIn({ login, register, loading, error }) {
             color="error"
             onPress={closeHandler}
             disabled={loading}
+            aria-label="Close"
           >
             Close
           </Button>
