@@ -45,7 +45,6 @@ const BandCard = ({ id, country, genreCode, members, name, year }) => {
       </Card.Body>
       <Card.Footer>
         <Link
-          icon
           color="primary"
           target="_blank"
           href="https://github.com/nextui-org/nextui"

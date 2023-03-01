@@ -3,8 +3,6 @@ import { Container, Grid, Text } from "@nextui-org/react";
 import BandCard from "../../components/BandCard";
 
 const Bands = ({ data }) => {
-  console.log("data", data);
-
   return (
     <Layout>
       <Container>
